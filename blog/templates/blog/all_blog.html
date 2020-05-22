@@ -1,1 +1,18 @@
-Hello blog
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<h2> Há um total de {{ blogs.count }} blog{{ blogs.count|pluralize }} neste site.  </h2>
+
+
+
+{% for blog in blogs %}
+
+<a href="{% 'blog:detail' blog.id % }"><h2>{{ blog.title }}</h2></a>
+
+<p>{{blog.description|striptags|truncatechars:100 }}</p>
+<h5>{{blog.created_date| date:'d M Y'}}</h5>
+
+{% endfor %}
+
+{% endblock %}

@@ -8,3 +8,7 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+class Register(models.Model):
+    head = models.CharField(max_length=100)
+

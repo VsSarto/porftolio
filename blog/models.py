@@ -11,3 +11,4 @@ class BlogAplication(models.Model):
     def __str__(self):
         return self.title
 
+
