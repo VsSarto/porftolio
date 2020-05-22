@@ -4,7 +4,7 @@ from .models import BlogAplication
 def all_blogs(request):
 
     blogs = BlogAplication.objects.order_by('-created_date')[:5]
-    return render(request,"blog/all_blog.html", {'blogs':blogs})
+    return render(request,"blog/all_blogs.html", {'blogs':blogs})
 
 def detail(request, blog_id):
     blog = get_object_or_404(BlogAplication, pk=blog_id)    #usado para mostrar varios valores

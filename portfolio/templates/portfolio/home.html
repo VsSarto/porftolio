@@ -4,6 +4,12 @@
 
 {% block content %}
 
+
+
+<img src="{% static 'portfolio/python.png' %}" class="rounded float-right" width="30" height="30">
+<img src="{% static 'portfolio/django.png' %}" class="rounded float-right" width="30" height="30">
+
+
 <div class="row justify-content-center my-3">
   <div class="col-5">
     <img src="{% static 'portfolio/front.jpg' %}" class="img-fluid">
@@ -12,11 +18,10 @@
 
 <div class="row justify-content-center mb-3">
   <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">Welcome and thanks for your interest in finding out a little more about me. 😊</h1>
+    <h1 id="hometext" class="font-weight-bold">Estou ansioso para trabalhar com você. 😊</h1>
   </div>
 </div>
-
-<h2 class="mt-5">Portfolio</h2>
+<h2 class="mt-5">Portfólio </h2>
 <hr>
 <div class="row">
   {% for project in projects %}
@@ -36,6 +41,10 @@
   </div>
   {% endfor %}
 </div>
+<div class="container text-center">
+    <a href="mailto:Vssarto@gmail.com" class="btn btn-primary my-2" >E-mail </a>
+  </div>
+
 
 {% endblock %}
 
