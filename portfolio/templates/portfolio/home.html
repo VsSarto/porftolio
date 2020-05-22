@@ -6,10 +6,6 @@
 
 
 
-<img src="{% static 'portfolio/python.png' %}" class="rounded float-right" width="30" height="30">
-<img src="{% static 'portfolio/django.png' %}" class="rounded float-right" width="30" height="30">
-
-
 <div class="row justify-content-center my-3">
   <div class="col-5">
     <img src="{% static 'portfolio/front.jpg' %}" class="img-fluid">
@@ -18,10 +14,18 @@
 
 <div class="row justify-content-center mb-3">
   <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">Estou ansioso para trabalhar com você. 😊</h1>
+    <h1 id="hometext" class="font-weight-bold">Seja bem vindo! Sua visita é mais que especial 😊</h1>
   </div>
 </div>
+
+
 <h2 class="mt-5">Portfólio </h2>
+<img src="{% static 'portfolio/python.png' %}" class="img-fluid" class="rounded float-right" width="30" height="30">
+<img src="{% static 'portfolio/django.png' %}" class="img-fluid" class="rounded float-right" width="30" height="30">
+
+
+
+
 <hr>
 <div class="row">
   {% for project in projects %}
