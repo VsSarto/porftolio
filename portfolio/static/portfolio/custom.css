@@ -6,8 +6,21 @@
     color: rgba(0,0,0,.5) !important;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+body, html {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://cdn.dribbble.com/users/211312/screenshots/5571571/artboard_1-100.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #blogtitle {
@@ -22,3 +35,5 @@ body {
         font-size: 5rem;
     }
 }
+
+
