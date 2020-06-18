@@ -20,12 +20,14 @@
 
 
 <h2 class="mt-5">Portfólio </h2>
+
 <img src="{% static 'portfolio/python.png' %}" class="img-fluid" class="rounded float-right" width="30" height="30">
 <img src="{% static 'portfolio/3.jpeg' %}" class="img-fluid" class="rounded float-right" width="32" height="32">
 <img src="{% static 'portfolio/post.jpeg' %}" class="img-fluid" class="rounded float-right" width="32" height="32">
-
 <img src="{% static 'portfolio/django.png' %}" class="img-fluid" class="rounded float-right" width="30" height="30">
 <img src="{% static 'portfolio/cs3.jpeg' %}" class="img-fluid" class="rounded float-right" width="32" height="32">
+<img src="{% static 'portfolio/flask.jpeg' %}" class="img-fluid" class="rounded float-right" width="30" height="30">
+
 
 
 
@@ -37,11 +39,11 @@
 
     {% if project.url %}
     <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+      <img src="{{ project.image.url }}" class="img-fluid mb-2" height="300" width="400" >
     </a>
     {% else %}
 
-    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    <img src="{{ project.image.url }}" class="img-fluid mb-2" height="300" width="400" >
     {% endif %}
     <h3>{{ project.title }}</h3>
     <p>{{ project.description }}</p>
